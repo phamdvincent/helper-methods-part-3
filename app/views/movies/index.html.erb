@@ -10,10 +10,8 @@
 
 <hr>
 
-<% @movies.each do |movie| %>
-  <div class="col-md-3">
-    <%= render partial: "movies/movie_card", locals: { movie: movie } %>
+  <div class="row">
+    <%= render @movies %>
   </div>
-  
-<% end %>
+
 </div>
